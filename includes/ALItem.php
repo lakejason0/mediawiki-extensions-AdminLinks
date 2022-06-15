@@ -52,14 +52,14 @@ class ALItem {
 		$item->label = $page_name;
 		$title = Title::makeTitleSafe( NS_MEDIAWIKI, $page_name );
 		$edit_link = $title->getFullURL( 'action=edit' );
-		$item->text = "<a href=\"$edit_link\">" . htmlspecialchars( $desc ) . "</a>";
+		$item->text = "<a href=\"$edit_link\""  . "class=\"adminlinks adminlinks-" . $page_name .  "\">" . htmlspecialchars( $desc ) . "</a>";
 		return $item;
 	}
 
 	static function newFromExternalLink( $url, $label ) {
 		$item = new ALItem();
 		$item->label = $label;
-		$item->text = "<a class=\"external text\" rel=\"nofollow\" href=\"" .
+		$item->text = "<a class=\"external text\" rel=\"nofollow\" href=\"" . "class=\"adminlinks adminlinks-" . $page_name . 
 			Sanitizer::encodeAttribute( $url ) . "\">" . htmlspecialchars( $label ) . "</a>";
 		return $item;
 	}
