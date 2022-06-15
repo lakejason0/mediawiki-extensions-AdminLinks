@@ -36,6 +36,10 @@ class AdminLinks extends SpecialPage {
 			$this->msg( 'adminlinks_editcss' )->text()
 		) );
 		$main_row->addItem( ALItem::newFromEditLink(
+			'Common.js',
+			$this->msg( 'adminlinks_editjs' )->text()
+		) );
+		$main_row->addItem( ALItem::newFromEditLink(
 			'Mainpage',
 			$this->msg( 'adminlinks_editmainpagename' )->text()
 		) );
@@ -146,6 +150,7 @@ class AdminLinks extends SpecialPage {
 			// null
 			$html = $msg;
 		}
+		$attrs['class'] = 'adminlinks adminlinks-' . $title;
 		return $linkRenderer->makeKnownLink( $title, $html, $attrs, $params );
 	}
 
