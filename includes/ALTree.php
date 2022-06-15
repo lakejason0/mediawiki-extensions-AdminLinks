@@ -34,7 +34,7 @@ class ALTree {
 	}
 
 	function toString() {
-		$text = "";
+		$text = "    <section id='adminlinks-panel'>\n";
 		foreach ( $this->sections as $section ) {
 			$text .= $section->toString();
 		}
