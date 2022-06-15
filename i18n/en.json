@@ -10,6 +10,7 @@
 	"adminlinks_general": "General",
 	"adminlinks_editsidebar": "Edit sidebar",
 	"adminlinks_editcss": "Edit CSS file",
+	"adminlinks_editjs": "Edit JS file",
 	"adminlinks_editmainpagename": "Edit name of main page",
 	"adminlinks_users": "Users",
 	"adminlinks_browsesearch": "Browse and search",
