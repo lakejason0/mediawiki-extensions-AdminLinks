@@ -27,7 +27,7 @@ class ALRow {
 	}
 
 	function toString() {
-		$text = "	<p>\n";
+		$text = "	<p class=\"adminlinks-row\">\n";
 		foreach ( $this->items as $i => $item ) {
 			if ( $i > 0 ) {
 				$text .= " ·\n";
