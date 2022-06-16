@@ -30,7 +30,7 @@ class ALRow {
 		$text = "	<p class=\"adminlinks-row\">\n";
 		foreach ( $this->items as $i => $item ) {
 			if ( $i > 0 ) {
-				$text .= " ·\n";
+				$text .= "\n";
 			}
 			$text .= '		' . $item->text;
 		}
